@@ -6,7 +6,6 @@ class Dice {
   roll(index) {
     return this.faces[index];
   }
-
   toString() {
     return `[${this.faces.join(",")}]`;
   }

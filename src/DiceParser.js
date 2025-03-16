@@ -1,0 +1,1 @@
+const Dice = require("./Dice");
