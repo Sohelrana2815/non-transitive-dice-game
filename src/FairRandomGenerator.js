@@ -9,6 +9,8 @@ class FairRandomGenerator {
       .createHmac("sha3-256", key)
       .update(number.toString())
       .digest("hex");
-    
+    return { number, key: key.toString("hex"), hmac };
   }
 }
+
+module.exports = FairRandomGenerator;
