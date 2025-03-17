@@ -1,5 +1,3 @@
-
-
 class Dice {
   constructor(faces) {
     this.faces = faces;
@@ -15,4 +13,3 @@ class Dice {
 }
 
 module.exports = Dice;
-

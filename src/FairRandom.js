@@ -1,4 +1,4 @@
-const crypto = require("crypto");
+const crypto = require('crypto');
 
 class FairRandom {
   static secureRandomInt(range) {
@@ -14,12 +14,11 @@ class FairRandom {
   static generate(range) {
     const keyBuffer = crypto.randomBytes(32);
     const number = FairRandom.secureRandomInt(range);
-    const hmac = crypto
-      .createHmac("sha3-256", keyBuffer)
-      .update(number.toString())
-      .digest("hex")
-      .toUpperCase();
-    return { number, key: keyBuffer.toString("hex").toUpperCase(), hmac };
+    const hmac = crypto.createHmac('sha3-256', keyBuffer)
+                       .update(number.toString())
+                       .digest('hex')
+                       .toUpperCase();
+    return { number, key: keyBuffer.toString('hex').toUpperCase(), hmac };
   }
 }
 

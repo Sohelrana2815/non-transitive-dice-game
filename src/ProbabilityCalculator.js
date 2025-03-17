@@ -15,7 +15,7 @@ class ProbabilityCalculator {
       matrix[i] = [];
       for (let j = 0; j < diceArray.length; j++) {
         if (i === j) {
-          matrix[i][j] = "-";
+          matrix[i][j] = '-';
         } else {
           const prob = this.winProbability(diceArray[i], diceArray[j]);
           matrix[i][j] = prob.toFixed(4);
