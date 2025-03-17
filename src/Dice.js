@@ -7,7 +7,7 @@ class Dice {
     return this.faces[index];
   }
   toString() {
-    return `[${this.faces.join(",")}]`;
+    return `[${this.faces.join(", ")}]`;
   }
 }
 
