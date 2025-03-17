@@ -17,7 +17,7 @@ A console implementation of a generalized non-transitive dice game with provably
 1. Ensure **Node.js v14+** is installed (SHA3 support required)
 2. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/dice-game.git
+git clone https://github.com/Sohelrana2815/non-transitive-dice-game
 cd dice-game
 ```
 3. Install dependencies:
